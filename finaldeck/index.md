@@ -1,0 +1,57 @@
+---
+title       : Car Selector App 
+subtitle    : An Introduction
+author      : Z Ritchken
+job         : 
+framework   : revealjs    # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : default        # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+publish(user = "zritchken", repo = "PublishSlide")
+
+---
+
+## Ideal Car Selector App
+
+An Overview
+by Z Ritchken
+
+
+--- .class #id 
+
+## Summary of App
+
+1. App utilizes the "mtcars" Motor Trend dataset.
+2. Based on user inputs, outputs the most desirable car in the data set.
+3. Three separate dropdown inputs.
+
+---
+
+## Definition of Inputs
+
+ - Transmission Type: Manual or Automatic
+ - Engine Type: 4, 6, or 8 cylinder engine
+ - Acceleration versus Efficiency: User desires high acceleration versus efficiency
+
+---
+
+## R Calculations
+
+ - The app uses these primary functions to output desired vehicle:
+ 
+-- *Subset*: Subsets mtcars data based on user input for **tranmission** type and **cyl** variables. 
+
+-- *Min* and *Max*: Isolates minimum **qsec** variable for acceleration or maximum **mpg** variable    for efficiency.
+
+---
+
+## Further Development Opportunities
+
+ - Expand dataset to include new 2015 model year cars.
+ - Add in additional inputs including price, type of vehicle, and top speed.
+ - Allow users to enter own inputs instead of dropdown list.
+ 
+---
+
+
